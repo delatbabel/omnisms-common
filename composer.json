@@ -1,0 +1,41 @@
+{
+    "name": "omnisms/common",
+    "type": "library",
+    "description": "Common components for Omnisms sms sending library",
+    "keywords": [
+        "gateway",
+        "sms",
+        "omnisms"
+    ],
+    "homepage": "https://github.com/delatbabel/omnisms-common",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Del Elson",
+            "email": "del@babel.com.au"
+        },
+        {
+            "name": "Omnisms Contributors",
+            "homepage": "https://github.com/delatbabel/omnisms-common/contributors"
+        }
+    ],
+    "autoload": {
+        "psr-0": { "Omnisms\\Common\\" : "src/" },
+        "classmap": ["src/Omnisms/Omnisms.php"]
+    },
+    "require": {
+        "php": ">=5.3.2",
+        "guzzle/http": "~3.1",
+        "symfony/http-foundation": "~2.1"
+    },
+    "require-dev": {
+        "omnisms/tests": "*"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "2.0.x-dev"
+        },
+        "gateways": [
+        ]
+    }
+}
